@@ -7,8 +7,8 @@ var capabilities = {
  'os' : 'Windows',
  'os_version' : '10',
  'resolution' : '1024x768',
- 'browserstack.user' : 'namratamotwani2',
- 'browserstack.key' : 'xLLUSrJZHrc79wVUQVas'
+ 'browserstack.user' : process.env.BROWSERSTACK_USERNAME,
+ 'browserstack.key' : process.env.BROWSERSTACK_ACCESS_KEY
 };
 
 var driver = new webdriver.Builder().
