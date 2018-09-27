@@ -9,7 +9,7 @@ var capabilities = {
  'resolution' : '1024x768',
  'browserstack.user' : 'namratamotwani2',
  'browserstack.key' : 'xLLUSrJZHrc79wVUQVas'
-}
+};
 
 var driver = new webdriver.Builder().
   usingServer('http://hub-cloud.browserstack.com/wd/hub').
