@@ -20,6 +20,7 @@ driver.get('http://bs-local.com:45691/check').then(function(){
   driver.findElement(webdriver.By.tagName('body')).getText().then(function (ans2){
     if(assert.equal("Up and running",ans2)=== undefined){
         console.log("Correct value 2");
+        driver.quit();
     }
   });
 });
