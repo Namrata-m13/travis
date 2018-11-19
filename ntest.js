@@ -1,4 +1,5 @@
 var webdriver = require('selenium-webdriver');
+var assert=require('assert');
 
 // Input capabilities
 var capabilities = {
