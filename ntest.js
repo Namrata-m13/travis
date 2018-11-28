@@ -9,7 +9,7 @@ var capabilities = {
  'os_version' : '10',
  'resolution' : '1024x768',
  'browserstack.user' : process.env.USERNAME,
- 'browserstack.key' : process.env.ACCESS_KEY
+ 'browserstack.key' : $ACCESS_KEY
 };
 
 var driver = new webdriver.Builder().
