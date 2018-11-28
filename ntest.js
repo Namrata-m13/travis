@@ -17,11 +17,11 @@ var driver = new webdriver.Builder().
   withCapabilities(capabilities).
   build();
 
-driver.get('http://bs-local.com:45691/check').then(function(){
-  driver.findElement(webdriver.By.tagName('body')).getText().then(function (ans2){
-    if(assert.equal("Up and running",ans2)=== undefined){
-        console.log("Correct value 2");
-        driver.quit();
-    }
+driver.get('http://www.google.com').then(function(){
+  driver.findElement(webdriver.By.name('q')).sendKeys('BrowserStack\n').then(function(){
+    driver.getTitle().then(function(title) {
+      console.log(title);
+      driver.quit();
+    });
   });
 });
